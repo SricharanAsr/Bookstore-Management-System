@@ -6,6 +6,10 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * Entity class representing a Customer Order.
+ * Links users to books and tracks order progression through statuses.
+ */
 @Entity
 @Table(name = "orders")
 @Data
