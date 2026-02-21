@@ -55,3 +55,8 @@ The Skybrisk Bookstore Management System aims to provide a premium, "Booky" user
 - `GET /api/orders`: List all orders (Admin Only).
 - `GET /api/orders/{id}`: Get order details.
 - `PUT /api/orders/{id}/status`: Update order status (Admin Only).
+
+## Contributors
+
+- **Sricharan Asr** - Lead Developer & UI Architecture
+- **Skybrisk Team** - Project Oversight
