@@ -2,6 +2,9 @@
 
 A Spring Boot-based backend system for managing books, users, and orders with JWT authentication and role-based access control.
 
+## Project Objective
+The Skybrisk Bookstore Management System aims to provide a premium, "Booky" user experience. It blends modern RESTful API standards with a unique frontend aesthetic inspired by parchment textures, leather bindings, and literary typography.
+
 ## Features
 
 - **User Authentication**: Register and login with secure password hashing (BCrypt) and JWT tokens.
