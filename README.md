@@ -60,3 +60,7 @@ The Skybrisk Bookstore Management System aims to provide a premium, "Booky" user
 
 - **Sricharan Asr** - Lead Developer & UI Architecture
 - **Skybrisk Team** - Project Oversight
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
