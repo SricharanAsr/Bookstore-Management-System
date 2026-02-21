@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;
 
+/**
+ * Entity class representing a Book in the bookstore system.
+ * Contains book metadata, pricing, and stock information.
+ */
 @Entity
 @Table(name = "books")
 @Data
