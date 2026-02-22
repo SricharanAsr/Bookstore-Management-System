@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skybrisk Bookstore | Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-dark">
+    <nav class="navbar">
+        <a href="hub.html" class="logo" style="text-decoration: none;">Skybrisk<span>Bookstore</span></a>
+        <ul class="nav-links">
+            <li><a href="hub.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li id="adminLink" class="hidden"><a href="admin.html">Dashboard</a></li>
+            <li>
+                <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+                    <span class="icon">🌓</span>
+                </button>
+            </li>
+            <li class="login-btn"><a href="#" id="authBtn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main id="mainApp">
+        <section class="view active" id="books"
+            style="padding-top: 160px; max-width: 1200px; margin: 0 auto; padding-left: 5%; padding-right: 5%;">
+            <div class="section-title">
+                <h2>Our Featured <span>Books</span></h2>
+                <div class="search-bar" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                    <input type="text" id="searchInput" placeholder="Search by title or author..."
+                        style="flex: 1; padding: 1rem; border-radius: 12px; border: 1.5px solid var(--glass-border); background: var(--input-bg); color: var(--text);">
+                    <button onclick="searchBooks()" class="cta-primary">Search</button>
+                </div>
+            </div>
+            <div class="books-grid" id="booksGrid" style="margin-top: 4rem;">
+                <div class="loading">Loading our library...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Skybrisk Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

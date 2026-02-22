@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skybrisk Bookstore | Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-dark">
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration: none;">Skybrisk<span>Bookstore</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+                    <span class="icon">🌓</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="auth-page">
+        <section class="auth-container">
+            <div class="modal-content" style="display: block; margin: 160px auto;">
+                <h2 id="modalTitle">Login</h2>
+                <form id="authForm">
+                    <div id="nameField" class="input-group hidden">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" id="submitAuth" class="cta-primary full-width">Login</button>
+                    <p class="toggle-auth" style="margin-top: 2rem; text-align: center;">
+                        Don't have an account? <a href="#" id="toggleAuthMode">Create one</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Skybrisk Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skybrisk Bookstore | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="theme-dark">
+    <nav class="navbar">
+        <a href="hub.html" class="logo" style="text-decoration: none;">Skybrisk<span>Bookstore</span></a>
+        <ul class="nav-links">
+            <li><a href="hub.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="admin.html">Dashboard</a></li>
+            <li>
+                <button id="themeToggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+                    <span class="icon">🌓</span>
+                </button>
+            </li>
+            <li class="login-btn"><a href="#" id="authBtn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main id="mainApp">
+        <section class="view active" id="admin"
+            style="padding-top: 160px; max-width: 1200px; margin: 0 auto; padding-left: 5%; padding-right: 5%;">
+            <div class="section-title">
+                <h2>Admin <span>Dashboard</span></h2>
+                <button class="cta-primary" style="margin-top: 1rem;" onclick="showAddBookModal()">Add New Book</button>
+            </div>
+            <div class="admin-grid"
+                style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="admin-card hub-card">
+                    <h3>Inventory Overview</h3>
+                    <p id="totalBooks" style="font-size: 2rem; color: var(--primary); margin-top: 1rem;">Total Books: 0
+                    </p>
+                </div>
+                <div class="admin-card hub-card">
+                    <h3>Order Processing</h3>
+                    <p>Manage customer orders and status updates.</p>
+                    <a href="#" class="cta-secondary" style="margin-top: 1.5rem; display: inline-block;"
+                        onclick="viewAllOrders()">View All Orders</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Book Modal -->
+    <div id="addBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeAddBook">&times;</span>
+            <h2 id="modalTitle">Add New Book</h2>
+            <form id="addBookForm">
+                <div class="input-group">
+                    <label for="bookTitle">Title</label>
+                    <input type="text" id="bookTitle" required placeholder="The Great Adventure">
+                </div>
+                <div class="input-group">
+                    <label for="bookAuthor">Author</label>
+                    <input type="text" id="bookAuthor" required placeholder="Jane Doe">
+                </div>
+                <div class="input-group">
+                    <label for="bookGenre">Genre</label>
+                    <input type="text" id="bookGenre" required placeholder="Fantasy">
+                </div>
+                <div class="input-group">
+                    <label for="bookPrice">Price ($)</label>
+                    <input type="number" id="bookPrice" step="0.01" required placeholder="19.99">
+                </div>
+                <div class="input-group">
+                    <label for="bookStock">Stock Quantity</label>
+                    <input type="number" id="bookStock" required placeholder="50">
+                </div>
+                <div class="input-group">
+                    <label for="bookImg">Book Cover Image</label>
+                    <input type="file" id="bookImg" accept=".jpeg,.jpg,.png,.img,image/jpeg,image/png"
+                        style="padding: 0.8rem;">
+                    <div id="imgPreview" style="margin-top: 1rem; display: none;">
+                        <img id="imgPreviewImg" src="" alt="Preview"
+                            style="max-height: 150px; border-radius: 8px; border: 2px solid var(--primary); box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+                    </div>
+                </div>
+                <button type="submit" class="cta-primary full-width">Add Book</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Skybrisk Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
