@@ -32,7 +32,8 @@ public class SecurityConfig {
                 .formLogin(AbstractHttpConfigurer::disable)
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req -> req
-                        .requestMatchers("/", "/index.html", "/style.css", "/app.js", "/favicon.ico",
+                        .requestMatchers("/", "/index.html", "/login.html", "/hub.html", "/books.html", "/orders.html",
+                                "/admin.html", "/book-details.html", "/style.css", "/app.js", "/favicon.ico",
                                 "/api/register", "/api/login",
                                 "/api-docs/**", "/swagger-ui/**", "/swagger-ui.html")
                         .permitAll()
