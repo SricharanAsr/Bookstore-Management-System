@@ -10,10 +10,24 @@ The Skybrisk Bookstore Management System aims to provide a premium, "Booky" user
 - **User Authentication**: Register and login with secure password hashing (BCrypt) and JWT tokens.
 - **Role-Based Access Control**: Separate permissions for `ADMIN` and `CUSTOMER` roles.
 - **Book Management**: Full CRUD operations for books, search by title/author, and pagination.
+- **Image Upload**: Admins can upload book cover images (JPEG, JPG, PNG) directly from the dashboard.
 - **Order Management**: Customers can place orders (stocks are automatically updated), and admins can manage order statuses.
+- **Multi-Page Frontend**: Premium "Booky" UI with dedicated pages for login, library hub, book browsing, orders, admin dashboard, and book details.
 - **Database Integration**: MySQL support for persistent data storage.
 - **API Documentation**: Interactive Swagger/OpenAPI documentation.
 - **Error Handling**: Centralized global exception handling with meaningful error messages.
+
+## Frontend Pages
+
+| Page | URL | Description |
+|------|-----|-------------|
+| Landing | `/index.html` | Premium landing page with hero section |
+| Login | `/login.html` | Authentication portal (login/register) |
+| Hub | `/hub.html` | Main library hub for logged-in users |
+| Books | `/books.html` | Full-page collection browser with search |
+| Orders | `/orders.html` | Order history and tracking |
+| Admin | `/admin.html` | Inventory and order management dashboard |
+| Book Details | `/book-details.html?id=N` | Immersive single-book view |
 
 ## Prerequisites
 
