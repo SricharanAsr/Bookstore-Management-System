@@ -1,9 +1,12 @@
-# Bookstore Management System REST API
+# Skybrisk Bookstore Management System
 
-A Spring Boot-based backend system for managing books, users, and orders with JWT authentication and role-based access control.
+A full-stack Bookstore Management System built with **Spring Boot** (backend) and a premium, multi-page **HTML/CSS/JS** frontend. The application features JWT-based authentication, role-based access control (Admin & Customer), a complete book inventory system with image uploads, and a sophisticated order management pipeline — all wrapped in a stunning literary-inspired "Booky" UI.
 
-## Project Objective
-The Skybrisk Bookstore Management System aims to provide a premium, "Booky" user experience. It blends modern RESTful API standards with a unique frontend aesthetic inspired by parchment textures, leather bindings, and literary typography.
+## Project Summary
+
+The Skybrisk Bookstore Management System is a complete web application designed for managing a bookstore's end-to-end operations. The backend is a robust **Spring Boot REST API** with MySQL persistence, secured using **JWT authentication** and **Spring Security** with role-based access (`ADMIN` / `CUSTOMER`). Admins can manage the book inventory (add, update, delete books with cover image uploads) and process customer orders through a status pipeline (Pending → Shipped → Delivered). Customers can browse the full book collection, view detailed book pages, and place orders.
+
+The frontend is a **Multi-Page Application (MPA)** with 7 dedicated pages, styled with a premium "Booky" aesthetic featuring antique gold and bronze accents, leather and parchment textures, and refined literary typography using Playfair Display and Merriweather fonts. Each page is fully responsive with glassmorphic navigation, animated hover effects, and a dark/light theme toggle.
 
 ## Features
 
