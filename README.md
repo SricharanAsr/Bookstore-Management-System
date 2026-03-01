@@ -50,7 +50,13 @@ The frontend is a **Multi-Page Application (MPA)** with 7 dedicated pages, style
    mvn spring-boot:run
    ```
 
-3. **API Documentation**:
+3. **Access the Project**:
+   Once the application is running, you can access the system at:
+   - **Frontend**: [http://localhost:8080/index.html](http://localhost:8080/index.html)
+   - **Swagger UI**: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+   - **H2 Console**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console) (JDBC URL: `jdbc:h2:mem:bookstore_db`)
+
+4. **API Documentation**:
    Once the application is running, access Swagger UI at:
    `http://localhost:8080/swagger-ui.html`
 
