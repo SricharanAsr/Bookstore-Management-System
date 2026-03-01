@@ -88,6 +88,18 @@ The frontend is a **Multi-Page Application (MPA)** with 7 dedicated pages, style
 - `GET /api/orders/{id}`: Get order details.
 - `PUT /api/orders/{id}/status`: Update order status (Admin Only).
 
+## Testing & Verification
+
+Comprehensive tests are included to ensure the reliability of the system:
+- **Unit Tests**: Business logic and service layer verification.
+- **Integration Tests**: REST API endpoint security and functionality.
+- **Manual Verification**: Interactive Swagger documentation at `/swagger-ui.html`.
+
+Run all tests with:
+```bash
+./mvnw test
+```
+
 ## Contributors
 
 - **Sricharan Asr** - Lead Developer & UI Architecture
