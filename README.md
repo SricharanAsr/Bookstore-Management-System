@@ -60,6 +60,15 @@ The frontend is a **Multi-Page Application (MPA)** with 7 dedicated pages, style
    Once the application is running, access Swagger UI at:
    `http://localhost:8080/swagger-ui.html`
 
+## Default Credentials
+
+### Admin Access
+- **Email**: `admin@skybrisk.com`
+- **Password**: `adminpassword`
+
+### Customer Access
+- Use the **Register** button on the Login page to create a new customer account.
+
 ## API Endpoints
 
 ### Authentication
